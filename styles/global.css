@@ -1,0 +1,366 @@
+:root {
+    --error: #A91919;
+}
+
+*:focus {
+    outline: transparent !important;
+}
+
+a {
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+}
+
+a span,
+p,
+svg,
+img {
+    -webkit-transition: 0.25s;
+}
+
+a:hover span,
+p,
+svg,
+img {
+    transition: 0.25s;
+}
+
+a::after,
+a::before {
+    transition: 0.3s;
+}
+
+a:hover::after,
+a:hover::before {
+    transition: 0.3s;
+}
+
+ol,
+ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.error-message {
+    color: var(--error);
+    font-size: 14px;
+}
+
+.container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#card-list {
+    padding: 60px 15px;
+    margin: 0 -10px;
+}
+
+#card-list .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.master_container {
+    width: clamp(296px, calc(25% - 20px), 450px);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    inset: 0;
+    border-radius: 10px;
+    padding: 30px 15px 20px;
+    background-color: #fff;
+    margin: 0 10px 30px;
+    position: relative;
+
+}
+
+.master_container .excluir {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+.master_container .excluir svg {
+    height: 30px;
+    color: var(--error);
+    width: auto;
+    transition: 0.3s;
+}
+
+.master_container .excluir:hover svg {
+    transition: 0.3s;
+    color: #920000;
+}
+
+.master_container p,
+span {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.master_container .properties {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 15px 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.master_container .properties span:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.master_container .properties span:nth-child(2) {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #000;
+}
+
+.cadastrar-content {
+    padding: 50px 0 0;
+}
+
+.cadastrar-content .cadastrar:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.cadastrar-content .cadastrar {
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px 100px;
+    font-size: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    background-size: 200% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #40c8f4, #2179b5), url('../public/images/bg.jpg');
+    text-decoration: none;
+}
+label {
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+input {
+  display: flex;
+  height: 35px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #dbdbdb;
+  width: 100%;
+  color: #efeeed;
+}
+
+input:focus {
+  color: #555555;
+}
+
+#cadastro {
+    display: flex;
+}
+
+.bg {
+    min-height: inherit;
+    min-height: 100vh;
+    width: calc(100% - 530px);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-image: url("/images/bg.jpg"),
+        linear-gradient(to right, #40c8f4, #2179b5);
+    background-blend-mode: multiply;
+}
+
+.box-right {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 65px 50px;
+    max-width: 530px;
+    width: 100%;
+}
+
+.form-content {
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.flex-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-bottom a {
+    display: flex;
+    font-size: 14px;
+    color: #686868;
+    align-items: center;
+    letter-spacing: 0.7px;
+}
+
+.flex-bottom img {
+    color: inherit;
+    height: 12px;
+    width: auto;
+    margin-left: 15px;
+}
+
+form button {
+    background-color: #40c8f4;
+    color: #fff;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    padding: 0 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transition: 0.3s;
+    background-color: rgba(64, 200, 244, 0.7);
+}
+
+form button:disabled {
+    color: #dddcdc;
+    background-color: #f6f6f6;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #383838;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1600px) {
+    .box-right {
+        padding: 50px 40px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .box-right {
+        padding: 35px 30px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    h1 {
+        text-align: center;
+    }
+
+    .form-content form .flex-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-content form .flex-bottom *+* {
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .master_container {
+        width: clamp(296px, calc(33.3333333333333% - 20px), 450px);
+    }
+
+    #card-list {
+        padding: 45px 15px;
+    }
+
+    .cadastrar-content {
+        padding: 40px 0 0;
+    }
+
+    .cadastrar-content .cadastrar {
+        padding: 19px 75px;
+        font-size: 18.5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .master_container {
+        width: clamp(320px, calc(50% - 20px), 450px);
+    }
+
+    #card-list {
+        padding: 35px 15px;
+    }
+
+    .cadastrar-content {
+        padding: 35px 0 0;
+    }
+
+    .cadastrar-content .cadastrar {
+        padding: 18px 65px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .master_container {
+        width: clamp(320px, calc(100%), 380px);
+        margin: 0 auto 25px;
+    }
+
+    #card-list {
+        padding: 30px 15px;
+    }
+
+    .cadastrar-content {
+        padding: 30px 0 0;
+        text-align: center;
+    }
+
+    .cadastrar-content .cadastrar {
+        padding: 17px 60px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+      label {
+    margin-bottom: 3px;
+  }
+
+  input {
+    height: 25px;
+  }
+}

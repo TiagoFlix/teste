@@ -1,0 +1,63 @@
+body {
+    font-family: 'IBMPlexSansThaiLooped' !important;
+    overflow-x: hidden !important;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansThaiLooped';
+    src: url('/fonts/IBMPlexSansThaiLooped-Light.ttf') format('truetype');
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+strong,
+time,
+address,
+i,
+a,
+b,
+label,
+li,
+td {
+    text-rendering: optimizeLegibility !important;
+}
+
+[class*="-bold"] {
+    font-weight: 700;
+}
+
+[class*="-semibold"] {
+    font-weight: 600;
+}
+
+[class*="-medium"] {
+    font-weight: 500;
+}
+
+[class*="-regular"] {
+    font-weight: 400;
+}
+
+[class*="-light"] {
+    font-weight: 300;
+}
+
+/*Headlines*/ 
+[class*="headline1"] {
+font-size: clamp(2rem, 3.125vw ,2.2rem);
+line-height: clamp(2.5rem ,4vw ,4.5rem);
+}
+
+/*label*/
+[class*="label1"] {
+  font-size: clamp(0.85rem, 1vw ,1rem);
+}
+
+
+
